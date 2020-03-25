@@ -1,0 +1,18 @@
+<div class="navigation">
+  <a routerLink="/about-me" routerLinkActive="active" class="menuItem" translate
+    >header.aboutMe</a
+  >
+  <a routerLink="/projects" routerLinkActive="active" translate class="menuItem"
+    >header.projects</a
+  >
+  <a routerLink="/skills" routerLinkActive="active" class="menuItem" translate
+    >header.skills</a
+  >
+  <a
+    (click)="switchLanguage()"
+    class="menuItem"
+    style=" justify-content: right !important;"
+    ><fa-icon [icon]="faFlagUsa"></fa-icon
+    >{{ "header.translate" | translate }}</a
+  >
+</div>

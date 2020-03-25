@@ -1,0 +1,52 @@
+.hvr-pulse-shrink {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-pulse-shrink:hover,
+.hvr-pulse-shrink:focus,
+.hvr-pulse-shrink:active {
+  -webkit-animation-name: hvr-pulse-shrink;
+  animation-name: hvr-pulse-shrink;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.navigation {
+  background-color: #00bcd4;
+  padding: 10px 30px;
+  height: 70px;
+  border-bottom: 1px solid #008596;
+
+  /*blocks are aligned using flex*/
+  display: flex;
+  justify-content: left;
+}
+
+.menuItem {
+  margin: 20px 15px;
+  /*Montserrat font by googlefonts*/
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.menuItem:hover {
+  margin-bottom: 0px;
+  border-bottom: 3px solid white;
+  /*CCS3 element for hover effect*/
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -ms-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
