@@ -1,0 +1,12 @@
+{
+  "header": {
+    "aboutMe": "O mnie",
+    "projects": "Projekty",
+    "skills": "Umiejętności",
+    "translate": "Zmień język"
+  },
+  "about-me": {
+    "hello": "Cześć!",
+    "basicInfo": "Jestem Michał, mam 24 lata i pracuje jako full stack developer"
+  }
+}
