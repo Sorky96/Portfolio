@@ -16,8 +16,10 @@ import { AboutMeComponent } from "./about-me/about-me.component";
 import { Routes, RouterModule } from "@angular/router";
 import { ProjectsComponent } from "./projects/projects.component";
 import { SkillsComponent } from "./skills/skills.component";
+import { APP_BASE_HREF } from "@angular/common";
 
 const appRoutes: Routes = [
+  { path: "", component: AboutMeComponent },
   { path: "about-me", component: AboutMeComponent },
   { path: "projects", component: ProjectsComponent },
   { path: "skills", component: SkillsComponent }
@@ -49,7 +51,7 @@ const appRoutes: Routes = [
       }
     })
   ],
-  providers: [],
+  providers: [{ provide: APP_BASE_HREF, useValue: "/" }],
   bootstrap: [AppComponent],
   exports: [RouterModule]
 })
